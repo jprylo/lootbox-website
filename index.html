@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lootbox Website by jprylo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lootbox Website</h1>
+        <div id="login-form">
+            <h2>Logowanie</h2>
+            <form action="php/login.php" method="post">
+                <input type="text" name="username" placeholder="Nazwa użytkownika" required>
+                <input type="password" name="password" placeholder="Hasło" required>
+                <button type="submit">Zaloguj się</button>
+            </form>
+        </div>
+        
+        <div id="register-form">
+            <h2>Rejestracja</h2>
+            <form action="php/register.php" method="post">
+                <input type="text" name="username" placeholder="Nazwa użytkownika" required>
+                <input type="password" name="password" placeholder="Hasło" required>
+                <button type="submit">Zarejestruj się</button>
+            </form>
+        </div>
+        
+        <div id="lootboxes">
+            <h2>Skrzynki</h2>
+            <button onclick="openLootbox(1)">Otwórz Skrzynkę 1</button>
+            <button onclick="openLootbox(2)">Otwórz Skrzynkę 2</button>
+        </div>
+    </div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
