@@ -9,8 +9,8 @@ body {
     margin: 0 auto;
     padding: 25px;
     background-color: rgb(9, 51, 90);
-    box-shadow: 0 0 360px rgba(77, 11, 110);
-    opacity: 0.9;
+    box-shadow: 0 0 400px rgba(77, 11, 110);
+    opacity: 0.923;
     border: 3px solid black;
     border-radius: 3.5%;
     align-items: center;
