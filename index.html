@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="bg">
     <div class="container">
-        <h1><img src = "logo.svg">G4NDUS</h1>
+        <h1><img src = "logo.svg">G4N</h1>
         <div id="login-form">
-            <h2>Logowanie</h2>
+            <h2>Zaloguj się</h2>
             <form action="php/login.php" method="post">
                 <input type="text" name="username" placeholder="Nazwa użytkownika" required>
                 <input type="password" name="password" placeholder="Hasło" required>
                 <button type="submit">Zaloguj się</button>
             </form>
         </div>
-        
+        <h1>lub</h1>
+        <br>
+        <br>
         <div id="register-form">
-            <h2>Rejestracja</h2>
+            <h2>Zarejestruj się</h2>
             <form action="php/register.php" method="post">
                 <input type="text" name="username" placeholder="Nazwa użytkownika" required>
                 <input type="password" name="password" placeholder="Hasło" required>
@@ -26,13 +29,21 @@
             </form>
         </div>
         
-        <div id="lootboxes">
+        <!-- <div id="lootboxes"> 
             <h2>Skrzynki</h2>
             <button onclick="openLootbox(1)">Otwórz Skrzynkę 1</button>
             <button onclick="openLootbox(2)">Otwórz Skrzynkę 2</button>
+        </div> -->
+
+        <div id="lootbox-section" style="display: none;">
+            <h2>Otwieranie Skrzynek i Gra na Automatach</h2>
+            <button id="open-lootbox">Otwórz Skrzynkę</button>
+            <!-- Więcej funkcji gry na automatach -->
+            <div id="lootbox-result"></div>
         </div>
     </div>
     
     <script src="js/scripts.js"></script>
+    </div>
 </body>
 </html>
